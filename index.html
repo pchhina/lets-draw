@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Draw!</title>
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+    <script src="freehandTool.js"></script>
+    <script src="imageEditTool.js"></script>
+    <script src="eraserTool.js"></script>
+    <script src="stampTool.js"></script>
+
+    <!-- styling scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <div class="box header"><h1>Let's Draw!</h1>  </div>
+            <div class="box" id="sidebar">
+                <div class="menu-btn">
+                    <img src="assets/save.png" alt="save icon" id="saveImageButton" title="save drawing">
+                    <img src="assets/delete.png" alt="delete icon" id="clearButton" title="clear canvas">
+                </div>
+                
+                <h2>Tools</h2>
+                <div id="tools"></div>
+
+                <div class="options">
+                    <h2>Color Palette</h2>
+                    <div class="colourPalette"> </div>
+                </div>
+            </div>
+            <div id="content"></div>
+        </div>
+    </body>
+</html>
